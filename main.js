@@ -22,9 +22,10 @@ let speed = 3;
 
 reset.addEventListener("click", () => {
   localStorage.setItem("highScore", "0");
-  score = 0;
-  scoreDisplay.innerHTML = "High Score: 0";
-  drawBlocks();
+  document.location.reload();
+  // score = 0;
+  // scoreDisplay.innerHTML = "High Score: 0";
+  // drawBlocks();
 });
 
 document.addEventListener("keydown", keyDownHandler);
